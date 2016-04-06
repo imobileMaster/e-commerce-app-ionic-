@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Shopping</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/shoping.css" type="text/css">
+    <link rel="stylesheet" href="css/responsive.css" type="text/css">
+    <link rel="stylesheet" href="css/chosen.min.css" type="text/css">
+    <style type="text/css">
+    	body{
+    		font-size:14px !important;
+    	}
+		 .input, textarea{
+			width:100%;
+			}	
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <div class="shop_nav_group col-xs-12">
+                    <div class="group-border">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>								
+								<a href="welcome.html" class="pull-right btn btn-xs" style="background:#8d8d8d;width:10%;" >
+									<i class="fa fa-home"></i>
+								</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse shop_nav " id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-left">
+                    <li>
+                        <a class="page-scroll" href="feed.html">Feed</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="supplies.html">Supplies</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="reporting.html">Reporting</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="social_media.html">Social media</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="settings.html">Profile</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="clearfix"></div>
+
+	<br>
+	<header style="overflow:hidden" >
+		<h2>UPLOAD DESCRIPTION</h2>
+	
+		<div class="clearfix"></div><br />
+		<form action="custom_desc.html" >
+			<div class="col-xs-5">
+				<label>Item</label>
+			</div>
+			<div class="col-xs-7">
+				<input id="name" type="text" name="item" class="input">
+				</div> 
+			<div class="clearfix"></div><br />
+			<div class="col-xs-5">
+				<label>Brand</label>
+			</div>
+			<div class="col-xs-7">
+				<input id="brand" type="text" name="brand" class="input">
+				</div> 			
+			<div class="clearfix"></div><br />
+			<div class="col-xs-5">
+				<label>Price</label>
+			</div>
+			<div class="col-xs-7">
+				<input id="price" type="text" name="price" class="input">
+				</div> 
+			<div class="clearfix"></div><br />
+			<div class="ui-widget col-xs-5">
+			  <label for="tags">Tags </label>
+			</div>
+			<div class="col-xs-7"">
+				<input type="text" id="tags" class="input">
+			</div>
+			<div class="clearfix"></div><br />
+			<div class="col-xs-5">
+				<label>Color</label>
+			</div>
+			<div class="col-xs-2">
+				<input id="color" type="color" name="color" class="input">
+				</div> 
+			<div class="clearfix"></div><br />
+			<div class="col-xs-5">
+				<label>Material</label>
+			</div>
+			<div class="col-xs-7">
+				<input type="text" name="material" class="input">
+				</div> 
+			<div class="clearfix"></div><br />
+			<div class="col-xs-5 hide">
+				<label>Type of clothing item</label>
+			</div>
+			<div class="col-xs-7 hide">
+				<input type="text" name="type_of_cloth" class="input">
+				</div> 
+			<div class="clearfix hide"></div><br />
+			<div class="col-xs-5">
+				<label>Size</label>
+			</div>
+			<div class="col-xs-7">
+				<input id="size" type="text" name="size" class="input">
+				</div> 
+			<div class="clearfix"></div><br />
+			<div class="col-xs-5">
+				<label>If new NWT *</label>
+			</div>
+			<div class="col-xs-7">
+				<input type="text" name="nwt" class="input">
+				</div> 
+			<div class="clearfix"></div><br />
+			<div class="col-xs-5">
+				<label>Retail Price</label>
+			</div>
+			<div class="col-xs-7">
+				<input type="number" name="retail_price" class="input">
+				</div> 
+			<div class="clearfix"></div><br />
+			<div class="col-xs-5">
+				<label>UPC code(Amazon only)</label>
+			</div>
+			<div class="col-xs-7">
+				<input type="number" name="upc_code" class="input">
+				</div> 
+			<div class="clearfix"></div><br />
+			<div class="col-xs-5">
+				<label>Origin(etsy only)</label>
+			</div>
+			<div class="col-xs-7">
+				<input type="number" name="origin" class="input">
+				</div> 
+			<div class="clearfix"></div><br />
+			<div class="col-xs-5">
+				<label>Issues</label>
+			</div>
+			<div class="col-xs-7">
+				<div  class="select-style" style="width:100%;" >
+		    	    <select class="selectpicker" id="issues" >
+		                <option>Stains</option>
+		                <option>Loose threads</option>
+		                <option>Alterations</option>
+		                <option>Odor</option>
+		                <option>Missing or damaged tags/ zippers</option>
+		                <option>Colour</option>
+		                <option>Material</option>
+		                <option>Designer issues</option>
+		                <option>Sizing off from normal standards</option>
+		            </select>
+		            <i class="fa fa-caret-down"></i>
+		        </div>
+			</div> 
+			<div class="clearfix"></div><br />
+			<div class="col-xs-5">
+				<label>Condition</label>
+			</div>
+			<div class="col-xs-7">
+				<div  class="select-style" style="width:100%;" >
+		    	    <select id="condition" class="selectpicker col-xs-12">
+		                <option>New with tags</option>
+		                <option>New with defects</option>
+		                <option>Lightly loved</option>
+		                <option>Used</option>
+		            </select>
+		        </div>
+			</div> 
+			<div class="clearfix"></div><br />
+			<div class="col-xs-5">
+				<label>Description</label>
+			</div>
+			<div class="col-xs-7">
+				<select id="description" style="width:100%" >
+
+				</select>
+				</div> 
+			<div class="clearfix"></div><br />			
+			<div class="col-xs-5">
+				<label>Shipping</label>
+			</div>
+			<div class="col-xs-7">
+				<div  class="select-style"  style="width:100%;" >
+		    	    <select id="shipping" class="selectpicker col-xs-12">
+		                <option>US Post Office</option>
+		                <option>FedEx</option>
+		                <option>UPS</option>
+		            </select>
+		        </div>
+			</div>
+			<div class="col-xs-12">
+		        <input type="button" onclick="save()" value="Upload" class="btn btn-lg btn-addcart">
+		    </div>
+			<div class="clearfix">&nbsp;</div>
+		</form> 
+	</header>
+	<script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/chosen.jquery.js"></script>
+
+	<script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="SQLitePlugin.js"></script>
+    <script type="text/javascript" src="js/index.js?v=20"></script>
+    <script type="text/javascript">
+        app.initialize();
+		  function deviceready()
+		  {
+				
+		  }		
+
+		  function save()
+		  {
+				localStorage["name"] = $("#name").val();
+				localStorage["brand"] = $("#brand").val();
+				localStorage["price"] = $("#price").val();
+				localStorage["tags"] = $("#tags").val();
+				localStorage["color"] = $("#color").val();
+				localStorage["material"] = $("#material").val();
+				localStorage["type_of_cloth"] = $("#type_of_cloth").val();
+				localStorage["size"] = $("#size").val();
+				localStorage["nwt"] = $("#nwt").val();
+				localStorage["retail_price"] = $("#retail_price").val();
+				localStorage["upc_code"] = $("#retail_price").val();
+				localStorage["origin"] = $("#origin").val();
+				localStorage["issues"] = $("#issues").val();
+				localStorage["condition"] = $("#upc_code").val();
+				localStorage["description"] = $("#description").val();
+				localStorage["shipping"] = $("#shipping").val();
+				location.href = "upload_image.html";
+		  }	
+
+		  var djsons = {2:"dress",
+							3:"jeans",
+							4:"jeans",
+							5:"jr",
+							6:"leggings",
+							7:"shorts",
+							8:"shorts",
+							9:"skirts",
+							10:"suits",
+							11:"suits",
+							12:"sweater",
+							13:"sweater",
+							14:"swimwear",
+							15:"swimwear",
+							16:"sweats",
+							17:"sweats",
+							18:"ts",
+							19:"ts",
+							20:"tops",
+							21:"mixed",
+							22:"mixed"							
+							};			
+			$(function(){
+				$.getJSON("json/"+djsons[localStorage['category_id']]+".json", function(strs){
+					$("#description").html("");
+					$.each(strs, function(i, str){
+						$("#description").append("<option value='"+str+"' >"+str+"</option>");
+					});
+					$("#description").chosen();
+				});
+		   });
+
+    </script>	
+
+  
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Shopping</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/shoping.css" type="text/css">
+    <link rel="stylesheet" href="css/responsive.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <header>		  	
+        <img src="images/logo.png" width="200" height="200" />
+        <div class="home">
+				<div id="db_status" style="text-align:center;font-size:11px;" ></div> 
+            <a href="login.html"><div class="home_signin">
+                <span class="signin">Sign-in</span>
+            </div></a>
+            <div class="or">
+                or
+            </div>
+            <a href="signup.html"><div class="home_signup">
+                <span class="signup">Create Account</span>
+            </div></a>
+        </div>
+    </header>
+    
+    
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="SQLitePlugin.js"></script>
+    <script type="text/javascript" src="js/index.js?v=29"></script>
+    <script type="text/javascript">
+        //app.initialize();
+    </script>
+
+    <script type="text/javascript" src="js/jquery.soap.js?v=20"></script>
+
+	 <script>
+		$(function(){
+
+		soapRequest='<?xml version="1.0" encoding="utf-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://api.channeladvisor.com/webservices/">'+
+   '<soapenv:Header>'+
+      '<web:APICredentials>'+
+         '<web:DeveloperKey>c754d3b3-d156-41d8-9ee0-8e7e59f11371</web:DeveloperKey>'+
+         '<web:Password>Teamswap9@123</web:Password>'+
+      '</web:APICredentials>'+
+   '</soapenv:Header>'+
+   '<soapenv:Body>'+
+      '<web:SynchInventoryItem>'+
+	      '<web:accountID>1e81d228-1bf3-450e-83b2-af1e5f382a72</web:accountID>'+
+			'<web:item>'+
+		      '<web:Sku>'+(new Date()).getTime()+'</web:Sku>'+
+			'</web:item>'+
+      '</web:SynchInventoryItem>'+
+   '</soapenv:Body>'+
+'</soapenv:Envelope>';
+   
+	
+	
+  
+});
+
+	 </script>
+
+</body>
+</html>

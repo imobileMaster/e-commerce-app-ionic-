@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Shopping</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/shoping.css" type="text/css">
+    <link rel="stylesheet" href="css/responsive.css" type="text/css">
+    <style type="text/css">
+    	body{
+    		font-size:14px !important;
+    	}
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <div class="shop_nav_group col-xs-12">
+                    <div class="group-border">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                    </div>
+                    <p class="pull-right" style="font-size:20px !important;color:#000;">Settings</p>
+						  <div class="group-border" id="top-icons-outer" >									 
+								<a href="welcome.html">
+									<i class="fa fa-home" ></i>
+								</a>
+								<a href="javascript:history.back()">
+									<i class="fa fa-arrow-left" ></i>
+								</a>
+						  </div>
+                </div>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse shop_nav " id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-left">
+						  <li>
+                        <a class="page-scroll" href="welcome.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="item_details.html">Manage</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="supplies.html">Reporting</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="socialmedia.html">Social</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="settings.html">Profile</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="clearfix"></div>
+
+	<br>
+    <header>
+        <div class="col-xs-12" align="center">
+            <img src="images/pinterest.png" class="img-responsive" style="border-radius:50px;">
+        </div>
+        <div class="clearfix"></div><br />
+        <div class="col-xs-12 general">
+            <span>GENERAL</span>
+        </div>
+        <div class="col-xs-12 settings">
+            <div class="col-xs-12 detail">
+                <span>First Name *</span>
+            </div>
+            <div class="col-xs-12 name">
+                <input type="text" id="first_name" style="width: 100%;  border: 0;  outline: 0;" />
+            </div>
+        </div>
+		  <div class="col-xs-12 settings hide">
+            <div class="col-xs-12 detail">
+                <span>Middle Name</span>
+            </div>
+            <div class="col-xs-12 name">
+                <input type="text" id="middle_name" style="width: 100%;  border: 0;  outline: 0;" />
+            </div>
+        </div>	
+		  <div class="col-xs-12 settings">
+            <div class="col-xs-12 detail">
+                <span>Last Name</span>
+            </div>
+            <div class="col-xs-12 name">
+                <input type="text" id="last_name" style="width: 100%;  border: 0;  outline: 0;" />
+            </div>
+        </div>
+        <div class="col-xs-12 settings">
+            <div class="col-xs-12 detail">
+                <span>Email *</span>
+            </div>
+            <div class="col-xs-12 name">
+                <input type="text" id="email" style="width: 100%;  border: 0;  outline: 0;" />
+            </div>
+        </div>
+        <div class="col-xs-12 settings">
+            <div class="col-xs-12 detail">
+                <span>Password *</span>
+            </div>
+            <div class="col-xs-12 name">
+                <input type="password" id="password" style="width: 100%;  border: 0;  outline: 0;" />
+            </div>
+        </div>
+        <div class="col-xs-12 settings">
+            <div class="col-xs-12 detail">
+                <span>Name of Company</span>
+            </div>
+            <div class="col-xs-12 name">
+                <input type="text" id="company_name" style="width: 100%;  border: 0;  outline: 0;" />
+            </div>
+        </div>
+        <div class="col-xs-12 settings">
+            <div class="col-xs-12 detail">
+                <span>Website</span>
+            </div>
+            <div class="col-xs-12 name">
+                <input type="text" id="website" style="width: 100%;  border: 0;  outline: 0;" />
+            </div>
+        </div>
+        <div class="col-xs-12 settings">
+            <div class="col-xs-12 detail">
+                <span>State</span>
+            </div>
+            <div class="col-xs-12 name">
+                <input type="text" id="state" style="width: 100%;  border: 0;  outline: 0;" />
+            </div>
+        </div>
+        <div class="col-xs-12 settings">
+            <div class="col-xs-12 detail">
+                <span>City</span>
+            </div>
+            <div class="col-xs-12 name">
+                <input type="text" id="city" style="width: 100%;  border: 0;  outline: 0;" />
+            </div>
+        </div>
+        <div class="col-xs-12 settings">
+            <div class="col-xs-12 detail">
+                <span>Zip</span>
+            </div>
+            <div class="col-xs-12 name">
+                <input type="text" id="zip" style="width: 100%;  border: 0;  outline: 0;" />
+            </div>
+        </div>
+        <div class="col-xs-12 settings">
+            <div class="col-xs-12 detail">
+                <span>Type of Bussiness</span>
+            </div>
+            <div class="col-xs-12 name">
+                <select type="text" id="type_of_business" style="width: 100%;  border: 0;  outline: 0;" >
+						<option value="Individual">Individual</option>
+						<option value="Company">Company</option>
+					 </select>
+            </div>
+        </div>
+        <div class="col-xs-12 settings hide">
+            <div class="col-xs-12 detail">
+                <span>Birthday</span>
+            </div>
+            <div class="col-xs-12 name">
+                <input type="date" id="date_of_birth" style="width: 100%;  border: 0;  outline: 0;" />
+            </div>
+        </div>
+        <div class="col-xs-12 settings hide">
+            <div class="col-xs-12 detail">
+                <span>Social Security Number</span>
+            </div>
+            <div class="col-xs-12 name">
+                <input type="text" id="social_security" style="width: 100%;  border: 0;  outline: 0;" />
+            </div>
+        </div>
+
+		  <div class="col-xs-12 col-md-6 col-sm-6 cust text-left">
+            <i class="fa fa-plus-square-o"></i>&emsp;<a href="javascript:;" class="one">Payment *</a><br />
+            <div class="col-xs-12 col-md-12 col-sm-12 one1">
+                <input type="radio" name="payment" value="PAY_PAL">&emsp;We only accept PayPal <br>
+           </div>
+        </div>
+        <div class="clearfix"></div><br />
+        <div class="col-xs-12 col-md-6 col-sm-6 cust text-left">
+            <i class="fa fa-plus-square-o"></i>&emsp;<a href="javascript:;" class="one">Returns</a><br />
+            <div class="col-xs-12 col-md-12 col-sm-12 one1">
+                <input type="radio" id="returns_option" name="returns" value="We do not accept returns">&emsp;We do not accept returns<br>
+                <input type="radio" id="returns_option" name="returns" value="We accept returns if the buyer pays for the return shipping">&emsp;We accept returns if the buyer pays for the return shipping<br>
+                <input type="radio" id="returns_option" name="returns" value="If the item is inaccurately listed then we will accept returns">&emsp;If the item is inaccurately listed then we will accept returns<br>
+                <input type="radio" id="returns_option" name="returns" value="If you want to return an item they must be sent back to us no later than 14 days after the auction ended with buyer paying for return shipping">&emsp;If you want to return an item they must be sent back to us no later than 14 days after the auction ended with buyer paying for return shipping<br>
+                <input type="radio" id="returns_option" name="returns" value="Create your own">&emsp;Create your own
+            </div>
+        </div>
+        <div class="clearfix"></div><br />
+        <div class="col-xs-12 col-md-6 col-sm-6 cust text-left">
+            <i class="fa fa-plus-square-o"></i>&emsp;<a href="javascript:;" class="one">Shipping</a><br />
+            <div class="col-xs-12 col-md-12 col-sm-12 one1">
+                <input type="radio" name="shipping" value="USPSGround">&emsp;USPSGround
+            </div>
+        </div>
+        <div class="clearfix"></div><br />
+        <div class="col-xs-12 col-md-6 col-sm-6 cust text-left">
+            <i class="fa fa-plus-square-o"></i>&emsp;<a href="javascript:;" class="one">Other</a><br />
+            <div class="col-xs-12 col-md-12 col-sm-12 one1">
+                <input type="radio" id="others_option" name="other" value="All our items come from a smoke free environment">&emsp;All our items come from a smoke free environment<br>
+                <input type="radio" id="others_option" name="other" value="All our items come from a pet free environment">&emsp;All our items come from a pet free environment<br>
+                <input type="radio" id="others_option" name="other" value="All our items are guaranteed authentic">&emsp;All our items are guaranteed authentic<br>
+                <input type="radio" id="others_option" name="other" value="Create your own">&emsp;Create your own<br>
+            </div>
+        </div> 				
+
+        <div class="col-xs-12 settings hide">
+            <div class="col-xs-12 detail">
+                <span>EIN</span>
+            </div>
+            <div class="col-xs-12 name">
+                <input type="text" id="ein" style="width: 100%;  border: 0;  outline: 0;" />
+            </div>
+        </div>
+        <div class="col-xs-12 settings hide">
+            <div class="col-xs-12 detail">
+                <span>Bank Account*</span>
+            </div>
+            <div class="col-xs-12 name">
+                <input type="text" id="bank_account" style="width: 100%;  border: 0;  outline: 0;" />
+            </div>
+        </div>
+        <div class="col-xs-12 settings hide">
+            <div class="col-xs-12 detail">
+                <span>Routing Number*</span>
+            </div>
+            <div class="col-xs-12 name">
+                <input type="text" id="routing_number" style="width: 100%;  border: 0;  outline: 0;" />
+            </div>
+        </div>
+        <div class="col-xs-12 settings hide">
+            <div class="col-xs-12 detail">
+                <span>Credit Card Number*</span>
+            </div>
+            <div class="col-xs-12 name">
+                <input type="password" id="credit_card_number" style="width: 100%;  border: 0;  outline: 0;" />
+            </div>
+        </div>
+        <div class="col-xs-12 settings hide">
+            <div class="col-xs-12 detail">
+                <span>Expiration Date*</span>
+            </div>
+            <div class="col-xs-12 name">
+                <input type="date" id="expiration" style="width: 100%;  border: 0;  outline: 0;" />
+            </div>
+        </div>
+        <div class="col-xs-12 settings hide">
+            <div class="col-xs-12 detail">
+                <span>CSC*</span>
+            </div>
+            <div class="col-xs-12 name">
+                <input type="password" id="csc" style="width: 100%;  border: 0;  outline: 0;" />
+            </div>
+        </div>
+        <div class="col-xs-12 general">
+            <span>NOTIFICATIONS</span>
+        </div>
+        <div class="col-xs-12 settings">
+            <div class="col-xs-12 detail">
+                <span>Email notifications</span>
+                <div class="switch" style="float:right;">
+                  <input id="notification" class="cmn-toggle cmn-toggle-round" type="checkbox">
+                  <label for="notification"></label>
+                </div>
+            </div>
+
+           
+        </div>
+    </header>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	 <script src="js/index.js"></script>
+	 <script>
+
+		$(function(){
+            $(".one1").hide();
+          // Show chosen div, and hide all others
+            $("a").click(function () 
+            {
+                $('.one1').hide();
+                $(this).parent().find('div.one1').slideDown('slow');
+                $('i').removeClass('fa-minus-square-o');
+                $('i').removeClass('fa-plus-square-o');
+                $('i').addClass('fa-plus-square-o');
+                $(this).parent().find('i').removeClass('fa-plus-square-o');
+                $(this).parent().find('i').addClass('fa-minus-square-o');
+            });
+        });
+
+		$(function(){
+			$.getJSON(server_url+"/api.php?",{action:"get_user",data:{username:localStorage['logged_in_username']}},
+					function(res){
+						$.each(res, function(f, v){
+							$("#"+f).val(v);
+						});
+					});
+			$('input, select').change(function(){
+				var data = new Object();
+				if(this.type == "radio")
+				{
+					if($(this).is(":checked"))
+					{
+						data[this.id]=this.value;
+					}
+				}
+				else
+				{
+					data[this.id]=this.value;
+				}
+				$.post(server_url+"/api.php?username="+localStorage["logged_in_username"],
+					{action:'update_user',data:data},
+					function(res){
+					if(res.result=="success")
+					{
+						
+					}
+					else if(res.error_type=="db")
+					{
+						alert("Sorry Database Not Updated. Please Try Again");
+					}						
+					}, 'json');
+			});
+		});
+	 </script>
+	
+    </body>
+</html>

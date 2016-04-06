@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Shopping</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/shoping.css" type="text/css">
+    <link rel="stylesheet" href="css/responsive.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.css" type="text/css">
+    <style type="text/css">
+    	body{
+    		font-size:14px !important;
+    	}
+    	header{
+    		text-align: left !important;
+    	}
+    	header h2{
+			background-color: #A5A5A8;
+			color: #fff;
+		    font-size: 25px !important;
+		    text-align: center;
+		    margin-top: -187px;
+		    height: 190px;
+		    padding-top: 120px;
+    	}
+    	.fa-caret-down{
+    		  position: absolute;
+			  right: -15px;
+			  top: 7px;
+		}
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <div class="shop_nav_group col-xs-12">
+                    <div class="group-border">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+	
+                    </div>
+						  <div class="group-border" id="top-icons-outer" >									 
+								<a href="welcome.html">
+									<i class="fa fa-home" ></i>
+								</a>
+								<a href="javascript:history.back()">
+									<i class="fa fa-arrow-left" ></i>
+								</a>
+						  </div>
+                </div>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse shop_nav " id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-left">
+						  <li>
+                        <a class="page-scroll" href="welcome.html">Home</a>
+                    </li>
+						  <li>
+                        <a class="page-scroll" href="add_product.html">Sell</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="item_details.html">Manage</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="supplies.html">Reporting</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="socialmedia.html">Social</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="settings.html">Profile</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="clearfix"></div>
+
+	<br>
+	<header>
+		<img id="sel_cat_image" src="" class="img-responsive" style="height:115px;">
+		<h2>UPLOAD DESCRIPTION</h2>
+	</header>
+		<div class="clearfix"></div><br />
+		<form action="custom_desc.html">	
+			<div class="col-xs-12 col-md-12 col-sm-12">
+				<input type="text" id="short_description" class="input" placeholder="Short Description">
+				</div> 
+			<div class="clearfix"></div><br />
+			<div class="col-xs-12 col-md-12 col-sm-12 hide">
+				<input type="text" name="brand" class="input" id="brand" placeholder="Brand">
+			</div> 
+			<div class="clearfix"></div><br />
+			<div class="col-xs-12 col-md-12 col-sm-12">
+				<input name="color" 
+						  placeholder="Color" 
+						  id="color" class="input" />
+			</div> 
+			<div class="clearfix hide"></div><br />
+			<div class="col-xs-12 col-md-12 col-sm-12 hide">
+				<input type="number" name="price" class="input" placeholder="Price" id="price">
+				</div> 
+			<div class="clearfix"></div><br />
+			<div class="col-xs-12 col-md-12 col-sm-12">
+				<input type="text" id="designer" class="input" placeholder="Designer" >
+			</div>
+			<div class="clearfix"></div><br />
+			<div class="col-xs-12 col-md-12 col-sm-12">
+				<input type="text" name="material" class="input" placeholder="Material" id="material">
+				</div> 
+			<div class="clearfix"></div><br />
+			<div class="col-xs-12 col-md-12 col-sm-12">
+				<input type="text" name="cloth" class="input" placeholder="Type of Clothing Item" id="type_of_cloth">
+				</div> 
+			<div class="clearfix"></div><br />
+			<div class="col-xs-12 col-md-12 col-sm-12">
+				<input type="text" name="size" class="input" placeholder="Size" id="size">
+				</div> 
+			<div class="clearfix"></div><br />
+			<div class="col-xs-12 col-md-12 col-sm-12 hide">
+				<input type="text" name="nwt" class="input" placeholder="Ïf new NWT *" id="nwt">
+				</div> 
+			<div class="clearfix"></div><br />
+			<div class="col-xs-12 col-md-12 col-sm-12">
+				<input type="number" name="retail_price" class="input" placeholder="Retail Price" id="retail_price">
+				</div> 
+			<div class="clearfix"></div><br />
+			<div class="col-xs-12 col-md-12 col-sm-12">
+				<input type="number" name="upc_code" class="input" placeholder="UPC code (Amazon only)" id="upc_code">
+				</div> 
+			<div class="clearfix"></div><br />
+			<div class="col-xs-12 col-md-12 col-sm-12">
+				<input type="number" name="origin" class="input" placeholder="Origin (etsy only)" id="origin">
+				</div> 
+			<div class="clearfix"></div><br />
+			<div class="col-xs-12 col-md-12 col-sm-12">
+				<div  class="select-style">
+		    	    <select class="col-xs-12 input" id="issues" placeholder="Issues">
+		    	    	<option>Issues</option>
+		                <option>Stains</option>
+		                <option>Loose threads</option>
+		                <option>Alterations</option>
+		                <option>Odor</option>
+		                <option>Missing or damaged tags/ zippers</option>
+		                <option>Colour</option>
+		                <option>Material</option>
+		                <option>Designer issues</option>
+		                <option>Sizing off from normal standards</option>
+		            </select>
+		            <i class="fa fa-caret-down"></i>
+		        </div>
+			</div> 
+			<div class="clearfix"></div><br />
+			<div class="col-xs-12 col-md-12 col-sm-12" >
+				<div  class="select-style">
+		    	    <select class="input col-xs-12" id="condition">
+		    	    	
+		          </select>
+		          <i class="fa fa-caret-down"></i>
+		        </div>
+			</div> 
+			<div class="clearfix"></div><br />
+			<div class="col-xs-12 col-md-12 col-sm-12">
+				<textarea rows="2" cols="25" class="input" id="description" placeholder="Description"></textarea>
+				</div> 
+			<div class="clearfix"></div><br />
+			<div class="col-xs-12 col-md-12 col-sm-12">
+				<div  class="select-style">
+		    	    <select class="input col-xs-12" placeholder="Shipping" id="shipping" >
+						<option>Shipping</option>
+						<option>Calculated by buyers location , weight, size</option>
+		    	    	<option>FLAT</option>
+		            </select>
+		            <i class="fa fa-caret-down"></i>
+		        </div>
+			</div>
+			<div class="clearfix"></div><br />
+			<div class="col-xs-12 col-md-12 col-sm-12">
+				<label>Selling Sites</label><br />
+				<!--<a href="#" class="col-xs-3"><img src="images/craigslist.png" width="60" height="60"></a>-->
+				<a href="#" class="col-xs-2">
+					<img src="images/EBay1.png" width="60" height="60">
+				</a>
+				<a href="#" class="col-xs-2">
+					<img src="images/fb.png" width="60" height="60">
+				</a>
+				<a href="#" class="col-xs-2">
+					<img src="images/Twitter.png" width="60" height="60">
+				</a>
+			</div>
+			<div class="col-xs-12" align="center">
+		        <input type="button" onclick="save()" value="Upload" class="btn btn-lg btn-addcart">
+		    </div>
+		</form> 
+	<script src="js/jquery.js"></script>
+	<script>
+  $(function() {
+
+	 $.ui.autocomplete.filter = function (array, term) {
+		 var matcher = new RegExp("^" + $.ui.autocomplete.escapeRegex(term), "i");
+		 return $.grep(array, function (value) {
+			  return matcher.test(value.label || value.value || value);
+		 });
+	};
+
+	var colors =["aliceblue","antiquewhite","aquamarine","azure","beige","bisque","black","blanchedalmond","blue","blueviolet","brown","burlywood","cadetblue","chartreuse","chocolate","coral","cornflowerblue","cornsilk","cyan","darkgoldenrod","darkgreen","darkkhaki","darkolivegreen","darkorange","darkorchid","darksalmon","darkseagreen","darkslateblue","darkslategray","darkturquoise","darkviolet","deeppink","deepskyblue","dimgray","dodgerblue","firebrick","floralwhite","forestgreen","gainsboro","ghostwhite","gold","goldenrod","gray","green","greenyellow","honeydew","hotpink","indianred","ivory","khaki","lavender","lavenderblush","lawngreen","lemonchiffon","lightblue","lightcoral","lightcyan","lightgoldenrod","lightgoldenrodyellow","lightgray","lightpink","lightsalmon","lightseagreen","lightskyblue","lightslate","lightslategray","lightsteelblue","lightyellow","limegreen","linen","magenta","maroon","mediumaquamarine","mediumblue","mediumorchid","mediumpurple","mediumseagreen","mediumslateblue","mediumspringgreen","mediumturquoise","mediumviolet","midnightblue","mintcream","mistyrose","moccasin","navajowhite","navy","oldlace","olivedrab","orange","orangered","orchid","palegoldenrod","palegreen","paleturquoise","palevioletred","papayawhip","peachpuff","peru","pink","plum","powderblue","purple","red","rosybrown","royalblue","saddlebrown","salmon","sandybrown","seagreen","seashell","sienna","skyblue","slateblue","slategray","snow","springgreen","steelblue","tan","thistle","tomato","turquoise","violet","violetred","wheat","white","whitesmoke","yellow","yellowgreen"];
+
+	$("#color").autocomplete({
+		source:colors
+	})
+	.data("ui-autocomplete")._renderItem = function (ul, item) {
+    return $("<li>")
+        .data("item.autocomplete", item)
+        .append(item.label + "<span style='float:right;background:"+item.label+"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>")
+        .appendTo(ul);
+	};
+
+    $( "#designer" ).autocomplete({
+      source: designers
+    });
+
+	 var djsons = {2:"dress",
+							3:"jeans",
+							4:"jeans",
+							5:"jr",
+							6:"leggings",
+							7:"shorts",
+							8:"shorts",
+							9:"skirts",
+							10:"suits",
+							11:"suits",
+							12:"sweater",
+							13:"sweater",
+							14:"swimwear",
+							15:"swimwear",
+							16:"sweats",
+							17:"sweats",
+							18:"ts",
+							19:"ts",
+							20:"tops",
+							21:"mixed",
+							22:"mixed"							
+							};		
+	
+	 $( "#description" ).autocomplete({
+      source: "json/"+djsons[localStorage['category_id']]+".json"
+    });
+
+	 $("#designer").blur(function(){
+		
+		$.getJSON("http://api.dataweave.in/v1/price_intelligence/findProduct/?"+
+					"api_key=b20a79e582ee4953ceccf41ac28aa08d&product="+ $("#designer").val()+" "+localStorage["cat_name"]+"&page=1&per_page=10",
+					function(res){
+						var prices = [];
+						$.each(res.data, function(i, row){
+							prices.push(Number(row.available_price).toFixed(2));
+						});
+						var price = median(prices);
+						$("#price,#retail_price").val(price/60);
+					}); 
+	 });	
+
+  });
+	
+  function median(values) {
+
+    values.sort( function(a,b) {return a - b;} );
+
+    var half = Math.floor(values.length/2);
+
+    if(values.length % 2)
+        return values[half];
+    else
+        return (values[half-1] + values[half]) / 2.0;
+}	
+
+  </script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/designers.js"></script>
+	 <script src="js/index.js"></script>
+    <script>
+		$(function(){
+			$("#sel_cat_image")[0].src = localStorage['cat_image'];
+			$("#type_of_cloth").val(localStorage["cat_name"]);
+		});
+
+		function save()
+		  {
+
+				localStorage["short_description"] = $("#short_description").val();
+				localStorage["brand"] = $("#brand").val();
+				localStorage["color"] = $("#color").val();
+				localStorage["price"] = $("#price").val();
+				localStorage["designer"] = $("#designer").val();
+				localStorage["material"] = $("#material").val();
+				localStorage["type_of_cloth"] = $("#type_of_cloth").val();
+				localStorage["size"] = $("#size").val();
+				localStorage["nwt"] = $("#nwt").val();
+				localStorage["retail_price"] = $("#retail_price").val();
+				localStorage["upc_code"] = $("#retail_price").val();
+				localStorage["origin"] = $("#origin").val();
+				localStorage["issues"] = $("#issues").val();
+				localStorage["condition_code"] = $("#condition").val();
+				localStorage["description"] = $("#description").val();
+				localStorage["shipping"] = $("#shipping").val();
+				localStorage["selling_sites"] = "EBAY";
+				location.href = "measurement.html";
+		  }	
+		
+	 </script>	
+
+	<script>
+		selected_condition_code = 0;
+		$(function(){
+			if(typeof(localStorage["productRow"])!="undefined")
+			{
+				product = JSON.parse(localStorage["productRow"]);
+				$("#short_description").val(product.short_description);
+				$("#brand").val(product.brand);
+				$("#color").val(product.color);
+				$("#price").val(product.price);
+				$("#designer").val(product.designer);
+				$("#material").val(product.material);
+				$("#type_of_cloth").val(product.type_of_cloth);
+				$("#size").val(product.size);
+				$("#nwt").val(product.nwt);
+				$("#retail_price").val(product.retail_price);
+				$("#upc_code").val(product.upc_code);
+				$("#origin").val(product.origin);
+				$("#issues").val(product.issues);
+				$("#condition").val(product.condition_code);
+				selected_condition_code = product.condition_code
+				$("#description").val(product.description);
+				$("#shipping").val(product.shipping);
+			}
+
+			/*$("#short_description").blur(function(){
+				var parts = $(this).val().split(" ");
+				$("#size").val(parts[1]);
+				$("#designer").val(parts[2]);
+				$("#color").val(parts[3]);
+				for(i=5;i<parts.length;i++)
+					parts[4] += " "+parts[i];
+				$("#condition").val(parts[4].toLowerCase());
+			});*/
+
+			$("#size,#designer,#color,#condition").blur(function(){
+
+				$("#short_description").val($("#size").val()+" "+$("#designer").val()+" "+$("#color").val()+" "+$("#condition>option:selected").html());
+
+			});
+
+
+			$.getJSON(server_url+"/api.php?action=get_condition_codes", function(codes){
+				$("#condition").html('');
+				$.each(codes, function(i, row){	
+					var option = $("<option></option>");
+					option.val(row.id);
+					option.html(row.name);
+					$("#condition").append(option);
+				});
+				$("#condition").val(selected_condition_code);
+			});
+
+		});
+	 </script>	
+
+</body>
+</html>

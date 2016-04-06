@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Shopping</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/shoping.css" type="text/css">
+    <link rel="stylesheet" href="css/responsive.css" type="text/css">
+    <link rel="stylesheet" href="css/shoping.css" type="text/css">
+    <style type="text/css">
+    	body{
+    		font-size:15px !important;
+    	}
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+   <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <div class="shop_nav_group col-xs-12">
+                    <div class="group-border">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        
+                    </div>
+                    <div class="page_title">
+                     <span>Add Product</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse shop_nav " id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-left">
+						  <li>
+                        <a class="page-scroll" href="welcome.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="feed.html">Feed</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="item_details.html">Manage</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="supplies.html">Reporting</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="socialmedia.html">Social</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="settings.html">Profile</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+	<div class="clearfix"></div>
+	<header>
+		<h2>SOCIAL MEDIA CONTENT</h2>	
+	</header>
+	<div class="clearfix"></div><br />
+	<form>
+		<div class="col-xs-12 one1">
+			<input type="checkbox" value="">&emsp;Facebook and Instagram Content
+			<input type="text" class="login">
+		</div>
+		<div class="clearfix"></div><br />
+		<div class="col-xs-12 one1">
+			<input type="checkbox" value="">&emsp;Twitter Content
+			<input type="text" class="login">
+		</div>
+		<div class="clearfix"></div><br />
+		<div class="col-xs-12 one1">
+			<input type="checkbox" value="">&emsp;Pinterest
+			<input type="text" class="login">
+		</div>
+		<div class="clearfix"></div><br />
+		<div class="col-xs-12 one1">
+			<input type="checkbox" value="">&emsp;Etsy<br />
+			<input type="text" class="login">
+		</div>
+		<div class="clearfix"></div><br />
+		<input type="submit" value="Send Ao All" class="btn btn-lg btn-sendall">
+		<input type="submit" value="Skip" class="btn btn-lg btn-skip">
+	</form>
+	<script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+  
+</body>
+</html>

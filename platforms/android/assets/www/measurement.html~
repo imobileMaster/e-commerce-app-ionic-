@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Shopping</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/shoping.css" type="text/css">
+    <link rel="stylesheet" href="css/responsive.css" type="text/css">
+    <style type="text/css">
+    	body{
+    		font-size: 14px !important;
+    	}
+    </style>
+    
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <div class="shop_nav_group col-xs-12">
+                    <div class="group-border">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                    </div>
+						  <div class="group-border" id="top-icons-outer" >									 
+								<a href="welcome.html">
+									<i class="fa fa-home" ></i>
+								</a>
+								<a href="javascript:history.back()">
+									<i class="fa fa-arrow-left" ></i>
+								</a>
+						  </div>
+                </div>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse shop_nav " id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-left">
+						  <li>
+                        <a class="page-scroll" href="welcome.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="item_details.html">Manage</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="supplies.html">Reporting</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="socialmedia.html">Social</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="settings.html">Profile</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="clearfix"></div>
+
+    <br>
+    <h2 class="h2">Measurement (Inches)</h2>
+    <div class="clearfix"></div><br />
+        <form action="custom_desc.html">
+				<div id="shirt_section">
+            <h3>Shirt</h3>
+            <div class="clearfix"></div><br />
+            <div class="col-xs-12 col-md-12 col-sm-12">
+                <input type="number" id="inseam" class="input" placeholder="Inseam">
+            </div> 
+            <div class="clearfix"></div><br />  
+            <div class="col-xs-12 col-md-12 col-sm-12">
+                <input type="number" id="outseam" class="input" placeholder="Outseam">
+            </div> 
+            <div class="clearfix"></div><br /> 
+            <div class="col-xs-12 col-md-12 col-sm-12">
+                <input type="number" id="chest_bust" class="input" placeholder="Chest / Bust">
+            </div> 
+            <div class="clearfix"></div><br />
+            <div class="col-xs-12 col-md-12 col-sm-12">
+                <input type="number" id="sleeve_length" class="input" placeholder="Sleeve Length">
+            </div> 
+            <div class="clearfix"></div><br /> 
+            <div class="col-xs-12 col-md-12 col-sm-12">
+                <input type="number" id="waist" class="input" placeholder="Waist">
+            </div> 
+            <div class="clearfix"></div><br />
+				</div>
+				<div id="shoe_section">
+            <h3>Shoes</h3>
+            <div class="clearfix"></div><br />
+            <div class="col-xs-12 col-md-12 col-sm-12">
+                <input type="number" id="heel_weight" class="input" placeholder="Heel Hieght">
+            </div> 
+            <div class="clearfix"></div><br /> 
+            <div class="col-xs-12 col-md-12 col-sm-12">
+                <input type="number" id="shoe_length" class="input" placeholder="Shoe Length">
+            </div> 
+            <div class="clearfix"></div><br /> 
+            <div class="col-xs-12 col-md-12 col-sm-12">
+                <input type="number" id="shoe_width" class="input" placeholder="Shoe Width">
+            </div> 
+				</div>
+            <div class="clearfix"></div><br />
+            <div class="col-xs-12" align="center">
+                <input type="button" onclick="save()" value="Next" class="btn btn-lg btn-addcart">
+            </div>
+        </form>
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+	    <script src="js/jquery-ui.js"></script>
+		  <script src="js/index.js"></script>
+		 <script>
+			function save()
+			{
+				localStorage['inseam'] = $("#inseam").val();
+				localStorage['outseam'] = $("#outseam").val();
+				localStorage['chest_bust'] = $("#chest_bust").val();
+				localStorage['sleeve_length'] = $("#sleeve_length").val();
+				localStorage['waist'] = $("#waist").val();
+				localStorage['heel_weight'] = $("#heel_weight").val();
+				localStorage['shoe_length'] = $("#shoe_length").val();
+				localStorage['shoe_width'] = $("#shoe_width").val();
+				location.href = "profile.html";
+			}
+			$(function(){
+				if(typeof(localStorage["productRow"])!="undefined")
+				{
+					product = JSON.parse(localStorage["productRow"]);
+					$("#inseam").val(product.inseam);
+					$("#outseam").val(product.outseam);
+					$("#chest_bust").val(product.chest_bust);
+					$("#sleeve_length").val(product.sleeve_length);
+					$("#waist").val(product.waist);
+					$("#heel_weight").val(product.heel_weight);
+					$("#shoe_length").val(product.shoe_length);
+					$("#shoe_width").val(product.shoe_width);		
+				}
+				$(mfs.all).hide();
+				if($.inArray(localStorage["cat_name"].toLowerCase(), mcat1)!=-1)			
+				{
+					$(mfs.cat1).show();
+				}
+				else if($.inArray(localStorage["cat_name"].toLowerCase(), mcat2)!=-1)
+				{
+					$(mfs.cat2).show();
+				}
+				else if($.inArray(localStorage["cat_name"].toLowerCase(), mcat3)!=-1)
+				{
+					$(mfs.cat3).show();
+				}
+			});
+  		 </script>	
+</body>
+</html>

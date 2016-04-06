@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Shopping</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/shoping.css" type="text/css">
+    <link rel="stylesheet" href="css/responsive.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.css" type="text/css">
+    <style type="text/css">
+    	body{
+    		font-size:14px !important;
+    	}
+    	header{
+    		text-align: left !important;
+    	}
+    	header h2{
+			background-color: #A5A5A8;
+			color: #fff;
+		    font-size: 25px !important;
+		    text-align: center;
+		    margin-top: -187px;
+		    height: 190px;
+		    padding-top: 120px;
+    	}
+    	.fa-caret-down{
+    		  position: absolute;
+			  right: -15px;
+			  top: 7px;
+		}
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <div class="shop_nav_group col-xs-12">
+                    <div class="group-border">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse shop_nav " id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-left">
+                    <li>
+                        <a class="page-scroll" href="feed.html">Feed</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="item_details.html">Supplies</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="supplies.html">Reporting</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="socialmedia.html">Social media</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="settings.html">Profile</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="clearfix"></div>
+
+	<br>
+	<header>
+		<img src="images/shirts.png" class="img-responsive">
+		<h2>UPLOAD DESCRIPTION</h2>
+	</header>
+		<div class="clearfix"></div><br />
+		<form action="custom_desc.html">	
+			<div class="col-xs-12 col-md-12 col-sm-12">
+				<input type="text" name="desc" class="input" placeholder="Short Description">
+				</div> 
+			<div class="clearfix"></div><br />
+			<div class="col-xs-12 col-md-12 col-sm-12">
+				<input type="text" name="brand" class="input" id="brands" placeholder="Brand">
+			</div> 
+			<div class="clearfix"></div><br />
+			<div class="col-xs-12 col-md-12 col-sm-12">
+				<input type="color" name="color" placeholder="color">
+			</div> 
+			<div class="clearfix"></div><br />
+			<div class="col-xs-12 col-md-12 col-sm-12">
+				<input type="number" name="price" class="input" placeholder="Price">
+				</div> 
+			<div class="clearfix"></div><br />
+			<div class="col-xs-12 col-md-12 col-sm-12">
+				<input type="text" id="tags" class="input" placeholder="Designer">
+			</div>
+			<div class="clearfix"></div><br />
+			<div class="col-xs-12 col-md-12 col-sm-12">
+				<input type="text" name="material" class="input" placeholder="Material">
+				</div> 
+			<div class="clearfix"></div><br />
+			<div class="col-xs-12 col-md-12 col-sm-12">
+				<input type="text" name="cloth" class="input" placeholder="Type of Clothing Item">
+				</div> 
+			<div class="clearfix"></div><br />
+			<div class="col-xs-12 col-md-12 col-sm-12">
+				<input type="number" name="size" class="input" placeholder="Size">
+				</div> 
+			<div class="clearfix"></div><br />
+			<div class="col-xs-12 col-md-12 col-sm-12">
+				<input type="text" name="nwt" class="input" placeholder="Ïf new NWT *">
+				</div> 
+			<div class="clearfix"></div><br />
+			<div class="col-xs-12 col-md-12 col-sm-12">
+				<input type="number" name="retail" class="input" placeholder="Retail Price">
+				</div> 
+			<div class="clearfix"></div><br />
+			<div class="col-xs-12 col-md-12 col-sm-12">
+				<input type="number" name="upc" class="input" placeholder="UPC code (Amazon only)">
+				</div> 
+			<div class="clearfix"></div><br />
+			<div class="col-xs-12 col-md-12 col-sm-12">
+				<input type="number" name="upc" class="input" placeholder="Origin (etsy only)">
+				</div> 
+			<div class="clearfix"></div><br />
+			<div class="col-xs-12 col-md-12 col-sm-12">
+				<div  class="select-style">
+		    	    <select class="col-xs-12 input" placeholder="Issues">
+		    	    	<option>Issues</option>
+		                <option>Stains</option>
+		                <option>Loose threads</option>
+		                <option>Alterations</option>
+		                <option>Odor</option>
+		                <option>Missing or damaged tags/ zippers</option>
+		                <option>Colour</option>
+		                <option>Material</option>
+		                <option>Designer issues</option>
+		                <option>Sizing off from normal standards</option>
+		            </select>
+		            <i class="fa fa-caret-down"></i>
+		        </div>
+			</div> 
+			<div class="clearfix"></div><br />
+			<div class="col-xs-12 col-md-12 col-sm-12" placeholder="Condition">
+				<div  class="select-style">
+		    	    <select class="input col-xs-12">
+		    	    	<option>Condition</option>
+		                <option>New with tags</option>
+		                <option>New with defects</option>
+		                <option>Lightly loved</option>
+		                <option>Used</option>
+		            </select>
+		            <i class="fa fa-caret-down"></i>
+		        </div>
+			</div> 
+			<div class="clearfix"></div><br />
+			<div class="col-xs-12 col-md-12 col-sm-12">
+				<textarea rows="2" cols="25" class="input" placeholder="Description"></textarea>
+				</div> 
+			<div class="clearfix"></div><br />
+			<div class="col-xs-12 col-md-12 col-sm-12">
+				<div  class="select-style">
+		    	    <select class="input col-xs-12" placeholder="Shipping">
+		    	    	<option>Shipping</option>
+		                <option>US Post Office</option>
+		                <option>FedEx</option>
+		                <option>UPS</option>
+		            </select>
+		            <i class="fa fa-caret-down"></i>
+		        </div>
+			</div>
+			<div class="clearfix"></div><br />
+			<div class="col-xs-12 col-md-12 col-sm-12">
+				<label>Selleing Sites</label><br />
+				<a href="#" class="col-xs-3"><img src="images/craigslist.png" width="60" height="60"></a>
+				<a href="#" class="col-xs-2"><img src="images/ebay1.png" width="60" height="60"></a>
+			</div>
+			<div class="col-xs-12" align="center">
+		        <input type="submit" value="Upload" class="btn btn-lg btn-addcart">
+		    </div>
+		</form> 
+	<script src="js/jquery.js"></script>
+	<script>
+  $(function() {
+    var availableTags = [
+      	"A. Testoni Basic",
+		"A.F. VandevorstA10",
+		"A.L.C.",
+		"A.P.C.",
+		"Abercrombie & Fitch",
+		"ABS by Allen Schwartz",
+		"Acne",
+		"ADAM",
+		"Adam Akris",
+		"Adam Lippes",
+		"Adidas",
+		"Adrianna Papell",
+		"Adriano Goldschmied",
+		"Adrienne Landau",
+		"Adrienne Vittadini",
+		"AG Adriano Goldschmied",
+		"Agent Provocateur",
+		"agnes b.",
+		"Aiden Mattox",
+		"AIGLE",
+		"Akiko",
+		"A-K-R-I-S",
+		"Akris Punto",
+		"Alaïa",
+		"Alberta Ferretti Alessandra Rich"
+    ];
+    $( "#tags" ).autocomplete({
+      source: availableTags
+    });
+    var availableBrands = [
+    "Armony"
+    ];
+    $( "#brands" ).autocomplete({
+      source: availableBrands
+    });
+  });
+  </script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+  
+</body>
+</html>

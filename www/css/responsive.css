@@ -1,0 +1,51 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 9, 2015, 3:28:50 PM
+    Author     : Rahulvv
+*/
+
+@media (max-width:320px){
+    header h1{
+    font-size: 50px !important;
+    }
+    .home{
+        left: 10% !important;
+    }
+    
+    .welcome{
+        padding-top: 0;
+    }
+    .login_footer{
+        top: 110%;
+    }
+}
+
+@media (max-width:370px){
+    header h1{
+    font-size: 55px !important;
+    }
+    header h3{
+        font-size: 35px !important;
+        font-weight: 600;
+    }
+    
+    
+    header h6{font-size: 18px !important;}
+    header h5{font-size: 15px !important;}
+    
+    section h2{
+        font-size: 12px !important;
+        font-weight: 700;
+    }
+    section h4{
+        font-size: 13px !important;
+    }
+    .home{
+        left: 13%;
+    }
+
+}

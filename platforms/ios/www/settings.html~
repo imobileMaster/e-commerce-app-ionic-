@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Shopping</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/shoping.css" type="text/css">
+    <link rel="stylesheet" href="css/responsive.css" type="text/css">
+    <style type="text/css">
+    	body{
+    		font-size:14px !important;
+    	}
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <div class="shop_nav_group col-xs-12">
+                    <div class="group-border">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+
+                    </div>
+                    <p class="pull-right" style="font-size:20px !important;color:#000;">Settings</p>
+                </div>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse shop_nav " id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-left">
+                    <li>
+                        <a class="page-scroll" href="feed.html">Feed</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="supplies.html">Supplies</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="reporting.html">Reporting</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="social_media.html">Social media</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="settings.html">Profile</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="clearfix"></div>
+
+	<br>
+    <header>
+        <div class="col-xs-12" align="center">
+            <img src="images/pinterest.png" class="img-responsive" style="border-radius:50px;">
+        </div>
+        <div class="clearfix"></div><br />
+        <div class="col-xs-12 general">
+            <span>GENERAL</span>
+        </div>
+        <div class="clearfix"></div><br />
+        <div class="col-xs-12 settings">
+            <div class="col-xs-12 detail">
+                <span >First Name</span>
+            </div>
+            <div class="col-xs-12 name">
+               <span>
+					<input type="text" id="first_name" style="background:transparent;border:0;outline:0;float:left;" />
+					</span>
+            </div>
+        </div>
+        <div class="clearfix"></div><br />
+		  <div class="col-xs-12 settings">
+            <div class="col-xs-12 detail">
+                <span >Middle Name</span>
+            </div>
+            <div class="col-xs-12 name">
+               <span>
+					<input type="text" id="middle_name" style="background:transparent;border:0;outline:0;float:left;" />
+					</span>
+            </div>
+        </div>
+        <div class="clearfix"></div><br />	
+		  <div class="col-xs-12 settings">
+            <div class="col-xs-12 detail">
+                <span >Last Name</span>
+            </div>
+            <div class="col-xs-12 name">
+               <span>
+					<input type="text" id="last_name" style="background:transparent;border:0;outline:0;float:left;" />
+					</span>
+            </div>
+        </div>
+        <div class="clearfix"></div><br />	
+        <div class="col-xs-12 settings">
+            <div class="col-xs-12 detail">
+                <span>Email</span>
+            </div>
+            <div class="col-xs-12 name">
+                <span >
+						<input type="text" id="email" style="background:transparent;border:0;outline:0;float:left;" />
+					 </span>
+            </div>
+        </div>
+        <div class="clearfix"></div><br />
+        <div class="col-xs-12 settings">
+            <div class="col-xs-12 detail">
+                <span>Password</span>
+            </div>
+            <div class="col-xs-12 name">
+                <span >
+						<input type="text" id="password" style="background:transparent;border:0;outline:0;float:left;" />
+					 </span>
+            </div>
+        </div>
+        <div class="col-xs-12 settings">
+            <div class="col-xs-12 detail">
+                <span>Birthday</span>
+            </div>
+            <div class="col-xs-12 name">
+                <span  >
+						<input type="date" id="date_of_birth" style="background:transparent;border:0;outline:0;float:left;" />
+					 </span>
+            </div>
+        </div>
+        <div class="col-xs-12 general">
+            <span>NOTIFICATIONS</span>
+        </div>
+        <div class="col-xs-12 settings">
+            <div class="col-xs-12 detail">
+                <span>Email notifications</span>
+                <div class="switch" style="float:right;">
+                  <input id="cmn-toggle-1" class="cmn-toggle cmn-toggle-round" type="checkbox">
+                  <label for="cmn-toggle-1"></label>
+                </div>
+            </div>
+
+           
+        </div>
+    </header>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	 <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="SQLitePlugin.js"></script>
+    <script type="text/javascript" src="js/index.js?v=29"></script>
+    <script type="text/javascript">
+        app.initialize();
+		  function deviceready()
+		  {
+				query("SELECT * FROM users WHERE id=?", [localStorage['logged_in_user_id']], 
+						function(tx, res){
+							row = res.rows.item(0);
+							$("#first_name").val(row.first_name);
+							$("#middle_name").val(row.middle_name);
+							$("#last_name").val(row.last_name);
+							$("#email").val(row.email);
+							$("#password").val(row.password);
+							$("#date_of_birth").val(row.date_of_birth);
+						}, 
+						function(){
+						});
+				$("#first_name").change(function(){
+					update("users", {first_name:$("#first_name").val()}, "id=?", [localStorage['logged_in_user_id']], 
+					function(){
+					}, function(e){
+						alert("Some exception occured");
+					});
+				});
+				$("#middle_name").change(function(){
+					update("users", {middle_name:$("#middle_name").val()}, "id=?", [localStorage['logged_in_user_id']], 
+					function(){
+					}, function(e){
+						alert("Some exception occured");
+					});
+				});
+				$("#last_name").change(function(){
+					update("users", {last_name:$("#last_name").val()}, "id=?", [localStorage['logged_in_user_id']], 
+					function(){
+					}, function(e){
+						alert("Some exception occured");
+					});
+				});
+				$("#email").change(function(){
+					update("users", {email:$("#email").val()}, "id=?", [localStorage['logged_in_user_id']], 
+					function(){
+					}, function(e){
+						alert("Some exception occured");
+					});
+				});
+				$("#password").change(function(){
+					update("users", {password:$("#password").val()}, "id=?", [localStorage['logged_in_user_id']], 
+					function(){
+					}, function(e){
+						alert("Some exception occured");
+					});
+				});
+				$("#date_of_birth").change(function(){
+					update("users", {date_of_birth:$("#date_of_birth").val()}, "id=?", [localStorage['logged_in_user_id']], 
+					function(){
+					}, function(e){
+						alert("Some exception occured");
+					});
+				});
+		  }		
+    </script>  	
+    </body>
+</html>
